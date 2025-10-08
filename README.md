@@ -1,6 +1,6 @@
 This is the original upstream [`xpad`](https://github.com/torvalds/linux/blob/master/drivers/input/joystick/xpad.c) driver from the Linux kernel with support for Xbox One controllers removed. If you are running the [`xone`](https://github.com/medusalix/xone) driver you will have to replace the `xpad` kernel module with this one to retain the functionality of Xbox and Xbox 360 controllers.
 
-⚠️ Changes from upstream `xpad` are pulled regularly. Pull requests for new devices added to [paroj/xpad](https://github.com/paroj/xpad) will not be accepted!
+⚠️ Changes from upstream `xpad` are pulled automatically. Please use the fork [xpad-noone-extra](https://github.com/forkymcforkface/xpad-noone-extra) if you would like to use the additions within [paroj/xpad](https://github.com/paroj/xpad).
 
 ## Installation
 
