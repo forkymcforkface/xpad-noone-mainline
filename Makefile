@@ -1,7 +1,7 @@
-obj-m += xpad.o
+obj-m = xpad.o
 
+KVERSION = $(shell uname -r)
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
-
+	make -C /lib/modules/$(KVERSION)/build V=1 M=$(PWD) modules
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	test ! -d /lib/modules/$(KVERSION) || make -C /lib/modules/$(KVERSION)/build V=1 M=$(PWD) clean
